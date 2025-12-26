@@ -1,0 +1,55 @@
+Fri Aug 01 16:58:27 IST 2025 main threw an exception:
+de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:372)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:256)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:191)
+	at Gametic.main(Gametic.java:9)
+Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:370)
+	... 4 more
+Caused by: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[java.io.FileNotFoundException: C:\Users\aditk\Downloads\wp4292444-wood-texture-wallpapers (The system cannot find the file specified)]
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:152)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:167)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
+	... 6 more
+Caused by: java.io.FileNotFoundException: C:\Users\aditk\Downloads\wp4292444-wood-texture-wallpapers (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:83)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:185)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:666)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:862)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	... 12 more
+
+====Runtime Information====
+Operating System: Windows 11
+	Architecture: amd64
+	Version: 10.0
+Memory:
+	Max heap size: 1.9 GiB
+	Current heap size: 126.0 MiB
+	Heap used: 37.6 MiB
+	Free heap: 88.4 MiB
+Java Version: OpenJDK Runtime Environment 24.0.1+9-30 
+	Vendor: Oracle Corporation
+Uptime: PT2.95S
+Screens: 1
+	Screen 0: 1920x1080@60hz
+
